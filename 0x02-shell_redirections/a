@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u+x .; chmod u-x README.md; git add .; git commit -m "Shell Permission"; git push
+ls -t | head -n 1 | xargs -I {} chmod u+x {}; git add .; git commit -m "Shell Permission"; git push
